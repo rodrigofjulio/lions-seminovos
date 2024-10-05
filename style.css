@@ -1,0 +1,271 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #b30404;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu retrátil */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px; /* abaixo do header */
+    right: 0;
+    width: 100%;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    display: none; /* Somente aparece em mobile */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none; /* Iniciar oculto no mobile */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .quadros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quadro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Quadros de veículos */
+.quadros {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.quadro {
+    width: 22%;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.quadro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.quadro .preco {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#btn-venda{
+  background-color:#b30404;
+  color:#ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  border-radius:20%;
+ 
+}
+label{
+    height: 100%;
+    font-size: 18px;
+    
+}
+
+/* Formulário de contato */
+.contato {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #b30404;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .quadros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quadro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+/* Produto */
+.produto {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+   
+}
+
+.imagem-grande {
+    margin-bottom: 20px;
+}
+
+.imagem-grande img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.miniaturas img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.miniaturas img:hover {
+    border: 2px solid #333;
+}
+
+.detalhes-produto h1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.detalhes-produto button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.detalhes-produto button:hover {
+    background-color: #555;
+}
+

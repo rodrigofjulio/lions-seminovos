@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo"><img src="img/lions_seminovos_logo.jpeg" alt="logo_lions"></div>
+        <div class="menu-toggle">☰ Menu</div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Veículos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner animado -->
+    <div class="banner">
+        <img src="/img/banner/ka_red.jpg" alt="Carro 1">
+        <img src="/img/banner/bmw_blue.jpg" alt="Carro 2" style="display:none;">
+        <img src="/img/banner/onix.jpg" alt="Carro 3" style="display:none;">
+    </div>
+
+    <!-- Seção de veículos -->
+    <div class="quadros">
+        <div class="quadro">
+            <img src="/img/corolla/corolla_xei.jpeg" alt="Veículo 1">
+             <label for="">TOYOTA COROLLA XEI 2.0</label>
+            <!-- <div class="preco">R$ 50.000</div> -->
+            <button id="btn-venda" type="submit" href="produto.html" > <a href="produto.html">Ver mais</a></button>
+        </div>
+        <div class="quadro">
+            <img src="/img/fiat_uno_vivaci/fiat_uno_vivaci.jpeg" alt="FIAT UNO VIVACI 1.0">
+            <label for="">FIAT UNO VIVACI 1.0</label>
+           <!-- <div class="preco">R$ 60.000</div>-->
+            <button id="btn-venda" type="submit">Ver mais</button>
+        </div>
+        <div class="quadro">
+            <img src="/img/jeep/jeep_renegade_longitude.jpeg" alt="Veículo 3">
+            <label for="">JEEP RENEGADE LONGITUDE 1.8</label>
+            <!--<div class="preco">R$ 70.000</div> -->
+            <button id="btn-venda" type="submit">Ver mais</button>
+        </div>
+        <div class="quadro">
+            <img src="/img/spin/spin.jpeg" alt="spin">
+            <label for="">CHEVROLET SPIN 2020
+                LT 1.8</label>
+            <!--<div class="preco">R$ 80.000</div> -->
+            <button id="btn-venda" type="submit">Ver mais</button>
+        </div>
+    </div>
+
+    <!-- Formulário de contato -->
+    <div class="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Lions Seminovos - Todos os direitos reservados © 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
